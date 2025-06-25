@@ -1,0 +1,48 @@
+### 🟢 Get All Products
+GET http://localhost:3001/api/products
+Content-Type: application/json
+
+###
+
+### 🟢 Get Product by ID
+GET http://localhost:3001/api/products/685bac9f667e728769bfd2fa
+Content-Type: application/json
+
+###
+
+### 🟡 Create New Product
+POST http://localhost:3001/api/products
+Content-Type: application/json
+
+{
+  "name": "Apple iPhone 16",
+  "description": "Latest Apple iPhone with amazing performance and camera",
+  "price": 119999,
+  "category": "electronics",
+  "brand": "Apple",
+  "stock": 100,
+  "isAvailable": true
+}
+
+###
+
+### 🟠 Update Product
+PUT http://localhost:3001/api/products/685bac9f667e728769bfd2fa
+Content-Type: application/json
+
+{
+  "name": "Apple iPhone 15 Pro",
+  "description": "Updated version with Pro features",
+  "price": 109999,
+  "category": "electronics",
+  "brand": "Apple",
+  "stock": 30,
+  "isAvailable": true
+}
+
+###
+
+### 🔴 Delete Product
+DELETE http://localhost:3001/api/products/685bac9f667e728769bfd2fa
+Content-Type: application/json
+
